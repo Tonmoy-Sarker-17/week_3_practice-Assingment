@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is home page</h1>
+    <h2>{{author}}</h2>
+    <h2>{{age}}</h2>
+    <h2>{{lst}}</h2>
+    <h4>length of author : {{author|length}}</h4>
+    <h3>My age after 2 years :{{ age | add:"2" }}</h3>
+     <h3>{{ slash | cut:"3" }}</h3>
+    <h2>{{ slash | default:"nothing" }}</h2>
+    <h3>add slash :{{ slash | addslashes }}</h3>
+    <h4>cap first {{'is'| capfirst}}</h4>
+    <h4>"{{ 'Python' | center:"15" }}"</h4>
+    <h3>{{ courses | dictsort:"name" }}</h3>
+    <h2>{{ slash | upper }}</h2>
+    <h2>{{ slash | wordcount  }}</h2>
+    <h3>{{ "here We GO" | title }}</h3>
+
+    <h1>{{ lst | join:" - " }}</h1>
+    <h1>{{ birthday | date:"D d M Y" }}</h1>
+    <h1>{{ lst | join:" // " }}</h1>
+    <h1>{{ lst | length }}</h1>
+    <h1>{{'Happy coding. Python is fun.' | truncatewords:2}}</h1>
+    <h1>{{'Happy coding. Python is fun.' | truncatechars:12}}</h1>
+    <h1>{{'Happy coding. Python is fun.' | wordcount}}</h1>
+    <h1>{{"Python is Fun" | cut:" "}}</h1>
+    <h2>{{ lst | first }}</h2>
+    <h2>{{ lst | last }}</h2>
+    <h2>{{ slash| linenumbers }}</h2>
+    <h2>{{ slash|lower }}</h2>
+    <h2>{{ slash|upper }}</h2>
+    <h3>{{ lst | slice:":2" }}.</h3>
+    <h2>{{'Earthly' | make_list}}</h2>
+
+        <!-- For loop -->
+        {% for i in courses %}
+        <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
+    {% endfor %}
+
+</body>
+</html>
