@@ -1,0 +1,25 @@
+{%extends 'base.html'%} 
+{%load static%}
+{%block content%} 
+
+<link rel="stylesheet" href="{%static 'index.css' %}">
+<div class=" cards" >
+
+{% for i in meals %}
+
+<div class="card" style="">
+  <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{i.idCategory}}.{{i.strCategory}}</h5>
+    <p class="card-text">
+      {{i.strCategoryDescription| truncatewords:10}}
+    </p>
+  </div>
+</div>
+
+{%endfor%}
+</div>
+
+
+
+{%endblock%}

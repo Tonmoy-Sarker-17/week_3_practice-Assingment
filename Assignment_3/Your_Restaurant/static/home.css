@@ -1,0 +1,18 @@
+body{
+    background-color:rgb(190, 127, 63)
+}
+.home_page{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.tittle{
+    font-family: 'Honk', system-ui;
+
+}
+.tag-line{
+    font-family: 'Protest Revolution', sans-serif;
+}

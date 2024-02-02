@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block content %}
+
+<link rel="stylesheet" href="{%static 'home.css'%}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Lobster&family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<div class="home_page">
+  <div><h1 class="tittle">Welcome to our Kitchen Site</h1>
+    <h4 class="tag-line">Get your desire meal and stay happy</h4></div>
+  <img src ="{%static 'kitchen_1.jpg'%}" alt = "Kitchen entry img" width=50% /> </div>
+
+
+{% endblock %}
